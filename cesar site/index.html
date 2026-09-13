@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macky James Cesar </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080a0f;
+            color: white;
+        }
+
+        /* Navigation */
+        nav {
+            background: #10141b;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #263241;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #4da3ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #4da3ff;
+        }
+
+        /* Home */
+        .home {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 8%;
+            gap: 40px;
+        }
+
+        .home-text {
+            max-width: 600px;
+        }
+
+        .home-text h1 {
+            font-size: 55px;
+            margin: 15px 0;
+        }
+
+        .home-text h1 span {
+            color: #4da3ff;
+        }
+
+        .home-text p {
+            color: #b8c1ce;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .tag {
+            color: #4da3ff;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        /* Picture */
+        .profile {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #4da3ff;
+            box-shadow: 0 0 35px rgba(77, 163, 255, 0.3);
+        }
+
+        /* Buttons */
+        .buttons {
+            margin-top: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            margin-right: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid #4da3ff;
+        }
+
+        .primary {
+            background: #4da3ff;
+            color: #07101c;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 8%;
+        }
+
+        .title {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .title span {
+            color: #4da3ff;
+        }
+
+        .subtitle {
+            color: #9da8b6;
+            margin-bottom: 30px;
+        }
+
+        /* About */
+        .about-box {
+            background: #10141b;
+            border: 1px solid #263241;
+            padding: 25px;
+            border-radius: 15px;
+            line-height: 1.8;
+            color: #b8c1ce;
+        }
+
+        /* Skills */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .skill {
+            background: #10141b;
+            border: 1px solid #263241;
+            padding: 25px;
+            text-align: center;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            border-color: #4da3ff;
+        }
+
+        .skill h3 {
+            margin: 10px 0;
+        }
+
+        .skill p {
+            color: #9da8b6;
+            font-size: 14px;
+        }
+
+        .icon {
+            font-size: 35px;
+        }
+
+        /* Contact */
+        .contact {
+            background: #10141b;
+            border: 1px solid #263241;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .contact p {
+            color: #b8c1ce;
+            margin: 15px 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #707b89;
+            border-top: 1px solid #263241;
+        }
+
+        /* Mobile */
+        @media (max-width: 800px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .home {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .home-text h1 {
+                font-size: 45px;
+            }
+
+            .profile {
+                width: 250px;
+                height: 250px;
+            }
+
+            .skills {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .skills {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">MACKY<span>.</span></div>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Home -->
+    <section class="home" id="home">
+
+        <div class="home-text">
+
+            <div class="tag">MY PORTFOLIO</div>
+
+            <h1>
+                Macky James<br>
+                <span>Cesar</span>
+            </h1>
+
+            <p>
+                Welcome to my personal portfolio.
+                I am passionate about technology,
+                programming, web development, and
+                creating digital projects.
+            </p>
+
+            <div class="buttons">
+                <a href="#skills" class="btn primary">
+                    My Skills
+                </a>
+
+                <a href="#contact" class="btn">
+                    Contact Me
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- YOUR PICTURE -->
+        <div>
+            <img src="macky.jpg"
+                 alt="Macky James Cesar"
+                 class="profile">
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2 class="title">
+            About <span>Me</span>
+        </h2>
+
+        <p class="subtitle">
+            Get to know me
+        </p>
+
+        <div class="about-box">
+
+            <p>
+                Hi! I'm <strong>Macky James Cesar</strong>.
+                I am interested in Information Technology,
+                programming, web development, and creative
+                digital projects.
+            </p>
+
+            <br>
+
+            <p>
+                I enjoy learning new technologies,
+                improving my programming skills, and
+                creating simple and useful websites.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2 class="title">
+            My <span>Skills</span>
+        </h2>
+
+        <p class="subtitle">
+            Skills that I am learning and developing
+        </p>
+
+
+        <div class="skills">
+
+            <div class="skill">
+                <div class="icon">💻</div>
+                <h3>HTML & CSS</h3>
+                <p>
+                    Creating clean and responsive
+                    websites.
+                </p>
+            </div>
+
+
+            <div class="skill">
+                <div class="icon">⚙️</div>
+                <h3>C++</h3>
+                <p>
+                    Learning programming,
+                    functions, and logic.
+                </p>
+            </div>
+
+
+            <div class="skill">
+                <div class="icon">🎨</div>
+                <h3>Web Design</h3>
+                <p>
+                    Designing modern and
+                    user-friendly websites.
+                </p>
+            </div>
+
+
+            <div class="skill">
+                <div class="icon">🤝</div>
+                <h3>Teamwork</h3>
+                <p>
+                    Working with others and
+                    sharing ideas.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- Contact -->
+<section id="contact">
+
+    <h2 class="title">
+        Contact <span>Me</span>
+    </h2>
+
+    <p class="subtitle">
+        Let's connect
+    </p>
+
+    <div class="contact">
+
+        <h3>Macky James Cesar</h3>
+
+        <p>
+            📧 Gmail:
+            <a href="mackyjamescesar@gmail.com">
+                mackyjamescesar@gmail.com
+            </a>
+        </p>
+
+        <p>
+            📱 Phone:
+            <a href="tel:+639508910587">
+                +63 9508910587
+            </a>
+        </p>
+
+    </div>
+
+</section>
+
+   
+
+
+    <!-- Footer -->
+    <footer>
+         Macky James Cesar | My Portfolio
+    </footer>
+
+</body>
+</html>
